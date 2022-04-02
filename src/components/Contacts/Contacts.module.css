@@ -1,0 +1,42 @@
+.contactsBlock {
+   background-color: rgb(168, 163, 213);
+   height: auto;
+   padding: 10px 0 10px 0;
+}
+
+.contactsContainer {
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.title{
+background-color: rgb(218, 218, 218);
+}
+
+.form{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 65%;
+   height: 300px;
+   background-color: rgb(168, 163, 213);
+   border: 1px solid;
+}
+
+.form input{
+  height: 40px;
+  background-color: rgb(129, 129, 129);
+}
+
+.form textarea{
+   height: 150px;
+   resize: none;
+   background-color: rgb(129, 129, 129);
+}
+
+.sendButton{
+   margin-top: 15px;
+   width: 100px;
+   height: 50px;
+}

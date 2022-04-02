@@ -1,0 +1,30 @@
+.skillsBlock{
+   background-color: rgb(171, 231, 169);
+   height: auto;
+   padding: 10px 0 10px 0;
+}
+
+.skillsContainer{
+   align-items: center;
+   justify-content: flex-start;
+   flex-direction: column;
+}
+
+.title{
+   background-color: rgb(180, 230, 217);
+}
+
+.skills{
+   border: 1px solid;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+@media screen and (max-width: 750px) {
+   .skills{
+      justify-content: center;
+   }
+}

@@ -1,0 +1,27 @@
+.mainBlock{
+   background-color: rgb(222, 146, 146);
+   height: 100vh;
+   padding: 10px 0 10px 0;
+}
+
+.mainContainer{ 
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.text{
+   width: 300px;
+   background-color: rgb(182, 175, 175);
+}
+.photo{
+   width: 300px;
+   height: 400px;
+   background-color: rgb(182, 175, 175);
+}
+
+@media screen and (max-width: 770px) {
+   .mainContainer {
+      justify-content: center;
+   }
+}

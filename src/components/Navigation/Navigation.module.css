@@ -1,0 +1,11 @@
+.navigation{
+   border: 1px solid;
+   width: 300px;
+   display: flex; 
+   justify-content: space-between;
+   margin-right: 10%;
+}
+
+.navigation a{
+   text-decoration: none;
+}
