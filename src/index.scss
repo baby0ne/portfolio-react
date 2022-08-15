@@ -1,0 +1,22 @@
+@import './common/styles/sass/variables';
+
+body {
+   margin: 0;
+   font: 400 14px/1.8 'Poppins', sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   color: $textColor;
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5 {
+      font-family: 'Josefin Sans', sans-serif;
+   }
+}
+
+code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
