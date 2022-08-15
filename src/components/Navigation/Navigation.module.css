@@ -1,5 +1,4 @@
 .navigation{
-   border: 1px solid;
    width: 300px;
    display: flex; 
    justify-content: space-between;
@@ -8,4 +7,9 @@
 
 .navigation a{
    text-decoration: none;
+   color: #fff;
+}
+
+.navigation a:hover{
+   color: #4e93e6;
 }
