@@ -1,7 +1,6 @@
 .mainBlock{
-   background-color: rgb(222, 146, 146);
+   background-color: #1f1f20;;
    height: 100vh;
-   padding: 10px 0 10px 0;
 }
 
 .mainContainer{ 
@@ -11,13 +10,15 @@
 }
 
 .text{
-   width: 300px;
-   background-color: rgb(182, 175, 175);
+   width: 400px;
+   /* background-color: rgb(182, 175, 175); */
 }
 .photo{
    width: 300px;
    height: 400px;
-   background-color: rgb(182, 175, 175);
+   background-image: url('./../../assets/image/me.JPG');
+   background-position: center;
+   background-size: cover;
 }
 
 @media screen and (max-width: 770px) {
