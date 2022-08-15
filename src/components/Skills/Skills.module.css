@@ -1,7 +1,6 @@
 .skillsBlock{
-   background-color: rgb(171, 231, 169);
+   background-color: #252527;;
    height: auto;
-   padding: 10px 0 10px 0;
 }
 
 .skillsContainer{
@@ -10,12 +9,8 @@
    flex-direction: column;
 }
 
-.title{
-   background-color: rgb(180, 230, 217);
-}
-
 .skills{
-   border: 1px solid;
+   margin-top: 30px;
    width: 100%;
    display: flex;
    flex-direction: row;
