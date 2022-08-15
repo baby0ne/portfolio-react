@@ -1,0 +1,40 @@
+@import './../../common/styles/sass/variables';
+
+.mainBlock {
+   background-color: $bgSecondaryColor;
+   height: 100vh;
+
+   .mainContainer {
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 954px) {
+         justify-content: center;
+      }
+
+      .text {
+         width: 400px;
+
+         span {
+            font-size: 20px;
+         }
+
+         h1 {
+            font-size: 33px;
+         }
+
+         p{
+            font-size: 20px;
+         }
+      }
+
+      .photo {
+         width: 350px;
+         height: 400px;
+         background-image: url('./../../assets/image/me.JPG');
+         background-position: center;
+         background-size: cover;
+      }
+   }
+}
