@@ -1,14 +1,17 @@
 import React from 'react';
-import styles from './Project.module.css';
+import styles from './Project.module.scss';
 
 type propsType = {
    projectName: string
    projectDir: string
+   style: {
+      backgroundImage: string
+   }
 }
 
 export const Project: React.FC<propsType> = (props) => {
    return <div className={styles.project}>
-      <div className={styles.image}>
+      <div className={styles.image} style={props.style}>
          <a href="#" className={styles.link}></a>
       </div>
       <div className={styles.projectDescription}>
