@@ -7,14 +7,13 @@ type propsType = {
 }
 
 export const Project: React.FC<propsType> = (props) => {
-   return <div className={styles.skill}>
+   return <div className={styles.project}>
       <div className={styles.image}>
          <a href="#" className={styles.link}></a>
       </div>
-      <div className={styles.projectDir}>
-         <h3>{props.projectName}</h3>
-         <p>{props.projectDir}</p>
+      <div className={styles.projectDescription}>
+         <h3 className={styles.projectName}>{props.projectName}</h3>
+         <p className={styles.projectDir}>{props.projectDir}</p>
       </div>
    </div>
-
 }
