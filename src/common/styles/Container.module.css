@@ -1,5 +1,6 @@
 .container{
-   border: 1px solid;
+   /* border: 1px solid #fff; */
+   padding: 30px 0 30px 0;
    height: 100%;
    width: 80%;
    margin: 0 auto;
