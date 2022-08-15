@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Main.module.css';
+import styles from './Main.module.scss';
 import containerStyle from './../../common/styles/Container.module.css';
 
 export const Main: React.FC = () => {
