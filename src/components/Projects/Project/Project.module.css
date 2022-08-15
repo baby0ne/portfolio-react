@@ -1,19 +1,30 @@
-.skill{
-   width: 400px;
-   border: 1px solid;
+.project {
+   width: 500px;
 }
 
-.image{
+.image {
    width: 100%;
    height: 300px;
    background-color: rgb(155, 149, 149);
 }
 
-.projectDir{
-
+.projectDescription {
+   padding: 25px 20px;
+   background: #252527;
 }
 
-.link{
+.projectName {
+   margin-bottom: 15px;
+   font-size: 16px;
+   letter-spacing: 1px;
+   margin: 0 0 5px;
+}
+
+.projectDir {
+   font-size: 12px;
+}
+
+.link {
    display: inline-block;
    width: 100%;
    height: 100%;
