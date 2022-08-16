@@ -4,6 +4,10 @@
    background-color: $bgSecondaryColor;
    height: 100vh;
 
+   @media screen and (max-width: 954px) {
+      height: auto;
+   }
+
    .mainContainer {
       align-items: center;
       justify-content: space-between;
@@ -24,7 +28,7 @@
             font-size: 33px;
          }
 
-         p{
+         p {
             font-size: 20px;
          }
       }
