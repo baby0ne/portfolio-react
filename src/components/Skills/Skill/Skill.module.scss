@@ -4,6 +4,12 @@
    flex-direction: column;
    align-items: center;
 
+   @media screen and (max-width: 750px) {
+      &:nth-child(-n+2) {
+         margin-bottom: 30px;
+      }
+   }
+
    .icon {
       width: 70px;
       height: 70px;
