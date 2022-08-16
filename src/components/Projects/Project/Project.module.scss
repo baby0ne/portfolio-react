@@ -3,6 +3,12 @@
 .project {
    width: 500px;
 
+   @media screen and (max-width: 1250px) {
+      &:nth-child(1) {
+         margin-bottom: 30px;
+      }
+   }
+
    .image {
       width: 100%;
       height: 300px;
