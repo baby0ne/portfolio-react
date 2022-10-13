@@ -3,8 +3,9 @@
 .mainBlock {
   background-color: $bgSecondaryColor;
   height: 100vh;
+  position: relative;
 
-  @media screen and (max-width: 1017px) {
+  @media screen and (max-width: 1081px) {
     height: auto;
   }
 
@@ -13,36 +14,74 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    @media screen and (max-width: 1017px) {
+    @media screen and (max-width: 1081px) {
       justify-content: center;
     }
 
     .text {
-      width: 450px;
+      width: 500px;
 
       span {
-        font-size: 20px;
+        font-size: 25px;
       }
 
       h1 {
         font-size: 40px;
 
-        span {
-          font-size: 35px;
+        .name {
+          font-size: inherit;
+          position: relative;
+          z-index: 0;
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 18px;
+            background-color: $primaryColor;
+            bottom: 0;
+            z-index: -1;
+
+            @media screen and (max-width: 590px) {
+              width: 185%;
+              left: -100px;
+            }
+          }
         }
       }
 
       p {
-        font-size: 20px;
+        font-size: 25px;
       }
     }
 
     .photo {
-      width: 350px;
-      height: 400px;
-      background-image: url('./../../assets/image/me.JPG');
-      background-position: center;
-      background-size: cover;
+      position: relative;
+      z-index: 0;
+
+      .image {
+        width: 350px;
+        height: 400px;
+        background-image: url('./../../assets/image/me.png');
+        background-position: center;
+        background-size: cover;
+
+        @media screen and (max-width: 450px) {
+          width: 280px;
+          height: 350px;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          border: 7px solid $primaryColor;
+          width: 102%;
+          height: 105%;
+          top: -15px;
+          left: 10px;
+          z-index: -1;
+        }
+      }
     }
   }
 }
