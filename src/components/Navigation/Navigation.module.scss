@@ -1,0 +1,19 @@
+@import './../../common/styles/sass/variables.scss';
+
+.navigation {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+  font-size: 16px;
+
+  a {
+    text-decoration: none;
+    color: $textColor;
+    transition: 0.3s;
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}

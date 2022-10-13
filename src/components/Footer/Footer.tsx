@@ -25,10 +25,10 @@ export const Footer: React.FC = () => {
       <div className={`${containerStyle.container} ${styles.footerContainer}`}>
          <h2 className={styles.title}>Andrei Ashmainets</h2>
          <div className={styles.storage}>
-            <LinksImage style={vk} link={'https:\\//vk.com/andruha_official'}/>
-            <LinksImage style={inst} link={'https:\\//www.instagram.com/andruhaofficial/?next=%2F'}/>
-            <LinksImage style={linkedIn} link={'https:\\//clck.ru/326NkR'}/>
-            <LinksImage style={telegram} link={'https:\\//t.me/andruhaofficial'}/>
+            <LinksImage style={vk} link={'https://vk.com/andruha_official'}/>
+            <LinksImage style={inst} link={'https://www.instagram.com/andruhaofficial/?next=%2F'}/>
+            <LinksImage style={linkedIn} link={'https://www.linkedin.com/in/andrei-ashmianets/'}/>
+            <LinksImage style={telegram} link={'https://t.me/andruhaofficial'}/>
          </div>
          <p className={styles.copyRight}>
             © 2022 All rights reserved
