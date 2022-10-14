@@ -6,6 +6,7 @@ import telegramImage from './../../assets/image/free-icon-telegram-2111646.png';
 import inImage from './../../assets/image/free-icon-linkedin-145807.png';
 import instImage from './../../assets/image/free-icon-instagram-4494488.png';
 import {LinksImage} from "../../common/components/linksImage/LinksImage";
+import {Fade} from 'react-awesome-reveal';
 
 export const Footer: React.FC = () => {
    const vk = {
@@ -23,6 +24,7 @@ export const Footer: React.FC = () => {
 
    return <div className={styles.footerBlock}>
       <div className={`${containerStyle.container} ${styles.footerContainer}`}>
+         <Fade direction={'up'} duration={700} triggerOnce={true}>
          <h2 className={styles.title}>Andrei Ashmainets</h2>
          <div className={styles.storage}>
             <LinksImage style={vk} link={'https://vk.com/andruha_official'}/>
@@ -33,6 +35,7 @@ export const Footer: React.FC = () => {
          <p className={styles.copyRight}>
             © 2022 All rights reserved
          </p>
+            </Fade>
       </div>
    </div>
 

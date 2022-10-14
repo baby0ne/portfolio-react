@@ -7,7 +7,7 @@ import { Main } from './components/Main/Main';
 import { Projects } from './components/Projects/Projects';
 import { Skills } from './components/Skills/Skills';
 
-const App: React.FC = () => {
+export const App: React.FC = () => {
    return <>
       <Header />
       <Main />
@@ -17,5 +17,3 @@ const App: React.FC = () => {
       <Footer />
    </>
 }
-
-export default App;

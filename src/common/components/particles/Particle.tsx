@@ -26,6 +26,10 @@ export const Particle: React.FC = () => {
             loaded={particlesLoaded}
             options={{
                 fpsLimit: 120,
+                fullScreen: {
+                    enable: false,
+                    zIndex: 0,
+                },
                 interactivity: {
                     events: {
                         onClick: {
@@ -66,7 +70,7 @@ export const Particle: React.FC = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 3,
+                        speed: 2,
                         straight: false,
                     },
                     number: {
@@ -83,7 +87,7 @@ export const Particle: React.FC = () => {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: {min: 1, max: 5},
                     },
                 },
                 detectRetina: true,
