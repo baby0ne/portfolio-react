@@ -1,7 +1,7 @@
 @import './../../../common/styles/sass/variables';
 
 .project {
-   width: 500px;
+   max-width: 500px;
 
    @media screen and (max-width: 1250px) {
       &:nth-child(1) {

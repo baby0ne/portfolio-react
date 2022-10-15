@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
    return <div className={styles.footerBlock}>
       <div className={`${containerStyle.container} ${styles.footerContainer}`}>
          <Fade direction={'up'} duration={700} triggerOnce={true}>
-         <h2 className={styles.title}>Andrei Ashmainets</h2>
+         <h2 className={styles.title}>Andrew Ashmainets</h2>
          <div className={styles.storage}>
             <LinksImage style={vk} link={'https://vk.com/andruha_official'}/>
             <LinksImage style={inst} link={'https://www.instagram.com/andruhaofficial/?next=%2F'}/>
