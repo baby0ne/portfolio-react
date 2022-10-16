@@ -11,6 +11,7 @@
     text-decoration: none;
     color: $textColor;
     transition: 0.3s;
+    cursor: pointer;
 
     &:hover {
       color: $primaryColor;
