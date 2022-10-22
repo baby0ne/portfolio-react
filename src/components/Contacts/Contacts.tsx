@@ -1,4 +1,4 @@
-import React, {KeyboardEvent} from 'react';
+import React from 'react';
 import styles from './Contacts.module.scss';
 import containerStyle from './../../common/styles/Container.module.css';
 import {Title} from '../../common/components/title/Title';
@@ -35,12 +35,6 @@ export const Contacts: React.FC = () => {
         },
     });
 
-    const onKeyPressHandler = (e: KeyboardEvent<HTMLTextAreaElement | HTMLInputElement>) => {
-        if (e.key === 'Enter') {
-            formik.handleSubmit()
-        }
-    }
-
     return <div className={styles.contactsBlock} id={'contacts'}>
         <div className={`${containerStyle.container} ${styles.contactsContainer}`}>
             <Title text={'Contacts'}/>
@@ -49,17 +43,14 @@ export const Contacts: React.FC = () => {
                     <input className={styles.formControl}
                            placeholder={'Name'}
                            {...formik.getFieldProps('name')}
-                           onKeyPress={onKeyPressHandler}
                            required/>
                     <input className={styles.formControl}
                            placeholder={'E-Mail'}
                            {...formik.getFieldProps('email')}
-                           onKeyPress={onKeyPressHandler}
                            required/>
                     <textarea className={styles.formControl}
                               placeholder={'Your message'}
                               {...formik.getFieldProps('message')}
-                              onKeyPress={onKeyPressHandler}
                               required/>
                     <button className={styles.sendButton} type={'submit'}>Send</button>
                 </Fade>
