@@ -17,7 +17,7 @@ export const Contacts: React.FC = () => {
             message: '',
         },
         onSubmit: values => {
-            axios.get('http://localhost:8080/email/test')
+            axios.get("http://localhost:8080/email/test?name=pidor")
                 .then(res => {
                     Swal.fire(
                         'Thanks for the feedback!',
