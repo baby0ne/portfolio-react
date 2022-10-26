@@ -7,6 +7,8 @@ import {useFormik} from "formik";
 import axios from "axios";
 import Swal from 'sweetalert2';
 
+//'https://gmail-smtp-andreka.herokuapp.com/sendMessage'
+
 export const Contacts: React.FC = () => {
     const formik = useFormik({
         initialValues: {
@@ -15,7 +17,7 @@ export const Contacts: React.FC = () => {
             message: '',
         },
         onSubmit: values => {
-            axios.post('https://gmail-smtp-andreka.herokuapp.com/sendMessage', values)
+            axios.post('https://localhost:8080/email/test', values)
                 .then(res => {
                     Swal.fire(
                         'Thanks for the feedback!',
