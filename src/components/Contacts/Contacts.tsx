@@ -17,7 +17,11 @@ export const Contacts: React.FC = () => {
             message: '',
         },
         onSubmit: values => {
-            axios.post("http://localhost:8080/email/test", values)
+            axios.post("http://localhost:8080/email/test", values, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
                 .then(res => {
                     Swal.fire(
                         'Thanks for the feedback!',
