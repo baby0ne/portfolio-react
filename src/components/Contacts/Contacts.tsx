@@ -19,7 +19,6 @@ export const Contacts: React.FC = () => {
         onSubmit: values => {
             axios.post('http://localhost:8080/email/test', values, {
                 headers: {
-                    "Accept": "application/json,",
                     "Content-Type": "application/json"
                 },
             })
