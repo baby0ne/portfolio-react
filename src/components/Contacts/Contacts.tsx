@@ -15,7 +15,11 @@ export const Contacts: React.FC = () => {
             message: '',
         },
         onSubmit: values => {
-            axios.post('https://gmail-smtp-andreka.herokuapp.com/sendMessage', values)
+            axios.post('https://git.heroku.com/gmail-smtp-andreka.git/sendMessage', values, {
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
                 .then(res => {
                     Swal.fire(
                         'Thanks for the feedback!',
